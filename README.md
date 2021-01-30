@@ -1,15 +1,14 @@
-### Date created
+### 1/30/20210
 Include the date you created this project and README file.
 
-### Project Title
+### Final_Github_Project
 Replace the Project Title
 
-### Description
+### Bike Share data and its analysis
 Describe what your project is about and what it does
 
-### Files used
+### bikeshare.py
 Include the files used
 
-### Credits
+### Ugur Karci
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
