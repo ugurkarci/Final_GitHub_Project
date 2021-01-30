@@ -11,4 +11,4 @@ It shows the previous project from bikeshare data analysis and code
 bikeshare.py
 
 ### Credit
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+This project is done by Ugur Karci.
