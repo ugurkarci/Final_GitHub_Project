@@ -1,14 +1,14 @@
-### 1/30/20210
-Include the date you created this project and README file.
+### Date
+It has been done in 30th of January 2021.
 
-### Final_Github_Project
-Replace the Project Title
+### Project Title
+I have named it Final_Github_Project
 
-### Bike Share data and its analysis
-Describe what your project is about and what it does
+### Description
+It shows the previous project from bikeshare data analysis and code
 
-### bikeshare.py
-Include the files used
+### Files
+bikeshare.py
 
-### Ugur Karci
+### Credit
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
