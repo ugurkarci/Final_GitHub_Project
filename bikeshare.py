@@ -26,7 +26,7 @@ def get_filters():
     while city not in ['chicago', 'new york city', 'washington']:
         print('Not Valid')
         city = input("Please Select one of the city between Chicago, New York City or Washington again: ").lower()
-        
+
     # TO DO: get user input for month (all, january, february, ... , june)
     month = input("Please Select a month between January-June or say all: ").lower()
     while month not in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
@@ -77,7 +77,7 @@ def load_data(city, month, day):
         df = df[df['day_of_week'] == day.title()]
 
     return df
-    
+
 
 def time_stats(df):
     """Displays statistics on the most frequent times of travel.
@@ -93,7 +93,7 @@ def time_stats(df):
     # TO DO: display the most common month
     most_common_month = df['month'].mode()[0]
     most_common_month_name = cal.month_name[most_common_month]
-    
+
     # TO DO: display the most common day of week
     most_common_day = df['day_of_week'].mode()[0]
 
@@ -124,7 +124,7 @@ def station_stats(df):
     popular_end_station = df['End Station'].mode()[0]
 
     # TO DO: display most frequent combination of start station and end station trip
-    df['start end station'] = df['Start Station'] + ' and ' + df['End Station'] 
+    df['start end station'] = df['Start Station'] + ' and ' + df['End Station']
     popular_start_end_station = df['start end station'].mode()[0]
 
     print('Most commonly used start station:', popular_start_station)
@@ -168,7 +168,7 @@ def user_stats(df):
 
     # TO DO: Display counts of user types
     counts_user_types = df['User Type'].value_counts()
-    
+
     print('Counts of user types:\n', counts_user_types, '\n')
 
     # TO DO: Display counts of gender
@@ -219,7 +219,7 @@ def display_data(df):
 
     #Extra while loop here to ask user if they want to continue viewing data
     while rdata == 'yes':
-        print("Do you wish to view more raw data?")
+        print("Do you wish to view another 5 lines of raw data?")
         counter += 5
         rdata = input().lower()
         #If user opts for it, this displays next 5 rows of data
@@ -229,8 +229,8 @@ def display_data(df):
              break
 
     print('-'*80)
-    
-    
+
+
 def main():
     while True:
         city, month, day = get_filters()
